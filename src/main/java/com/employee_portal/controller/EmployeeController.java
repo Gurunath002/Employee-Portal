@@ -10,11 +10,16 @@ import com.employee_portal.entity.EmployeeDto;
 import ch.qos.logback.core.model.Model;
 
 @Controller
-@RequestMapping("/employee-portal")
+
 public class EmployeeController {
 	
 	@GetMapping("/home")
 	public String home() {
+		return "home";
+	}
+	
+	@GetMapping("/")
+	public String home1() {
 		return "home";
 	}
 	
