@@ -1,8 +1,15 @@
 package com.employee_portal.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
-public class EmployeeDto {
-
+@Entity
+public class Employee {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int employeeId;
 	private String employeeName;
 	private String email;
@@ -45,12 +52,7 @@ public class EmployeeDto {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	@Override
-	public String toString() {
-		return "EmployeeDto [employeeId=" + employeeId + ", employeeName=" + employeeName + ", email=" + email
-				+ ", salary=" + salary + ", age=" + age + ", department=" + department + "]";
-	}
 	
 	
-	
+
 }

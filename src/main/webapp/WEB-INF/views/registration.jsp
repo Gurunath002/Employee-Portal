@@ -90,6 +90,7 @@
             and efficient database for company operations.
         </p>
     </div>
+     <h3 class="text-center text-success">${regMsg}</h3>
 
     <div class="form-container">
         <div class="form-header">
@@ -97,10 +98,7 @@
             <p class="text-muted">Please fill out the form to register an employee</p>
         </div>
         <form action="employee-registration" method="post">
-            <div class="mb-3">
-                <label for="employeeId" class="form-label">Employee ID</label>
-                <input type="text" class="form-control" id="employeeId" name="employeeId" placeholder="Enter Employee ID" required>
-            </div>
+           
             <div class="mb-3">
                 <label for="employeeName" class="form-label">Name</label>
                 <input type="text" class="form-control" id="employeeName" name="employeeName" placeholder="Enter Employee Name" required>
@@ -130,7 +128,9 @@
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
+   
 </div>
+
 
 <!-- Bootstrap JS (Optional for interactive features) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
